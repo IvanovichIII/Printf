@@ -21,7 +21,7 @@ int	ft_putp(size_t n, char *base)
 	i = 0;
 	result = 0;
 	if (n == 0)
-		result += write(1, "0x0", 3);
+		result += write(1, "(nil)", 5);
 	if (n != 0)
 		result += write(1, "0x", 2);
 	while (n)
