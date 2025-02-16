@@ -6,7 +6,7 @@
 /*   By: ivan <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 17:30:20 by ivan              #+#    #+#             */
-/*   Updated: 2024/04/30 17:30:49 by ivan             ###   ########.fr       */
+/*   Updated: 2025/02/16 15:45:41 by igomez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int	ft_printf(const char *format, ...)
 
 	va_start(arg, format);
 	result = 0;
+	if (!format)
+		return (-1);
 	while (*format)
 	{
 		if (*format == '%')
